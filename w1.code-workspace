@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Python: Current File",
+				"type": "python",
+				"request": "launch",
+				"program": "${file}",
+				"console": "integratedTerminal",
+				"justMyCode": true,
+				"args": [
+					"--config", "cfgs/ShapeNet55_models/dvae.yaml",
+					"--exp_name", "exp1",
+					"--num_workers", "1",
+					"--test",
+					"--ckpts", "ckpts/dVAE.pth",
+				]
+			}
+		]
+	}
+	
+}
